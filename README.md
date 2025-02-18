@@ -37,7 +37,7 @@ The program starts with a **welcome message** and features a **battery icon** th
 
 🖼️ **Welcome message display**  
 🔋 **Battery icon at different charge levels**  
-🎨 **Color changes with input**  
+🎨 **Color changes with input** 
 
 ---
 
