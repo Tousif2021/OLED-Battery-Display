@@ -1,33 +1,48 @@
-# OLED Battery Monitor - Smart Power Display 🔋
+# ⚡ OLED Battery Display on RISC-V MCU  
 
-This project is a **real-time battery monitoring system** designed for **embedded OLED displays**. It features **dynamic color-coded battery levels**, a **charging animation**, percentage tracking, and a **sleek UI** for professional visualization.
+This project demonstrates how to display dynamic content on an **OLED screen** using a **RISC-V-based microcontroller (IO-Card REV C)**.  
+The program starts with a **welcome message** and features a **battery icon** that updates based on user input.  
 
-## ✨ Features
-✅ **Real-time Battery Status** - Updates dynamically based on input.  
-✅ **Color-Coded UI** - Battery level changes color:  
-   - 🔴 **0-25%** - Red (Low Power Warning)  
-   - 🟤 **25-50%** - Brown (Moderate Power)  
-   - 🟡 **50-75%** - Golden Yellow (Optimal)  
-   - 🟢 **75-100%** - Green (Fully Charged)  
-✅ **Charging Animation** - ⚡ Battery pulses while charging.  
-✅ **Battery Percentage Display** - Shows power levels inside the battery icon.    
-✅ **Smooth UI Experience** - Professionally aligned text & dynamic effects.  
+## 🎯 Features  
+
+✅ **Startup Message** – Displays a **welcome message** on boot.  
+🔋 **Battery Level Indicator** – A battery icon visually represents different charge levels.  
+🎮 **User-Controlled Input:**  
+- `0` → **0% (Empty)**
+- `1` → **25% (Low)**
+- `2` → **50% (Half)**
+- `3` → **75% (High)**
+- `4` → **100% (Full, Green)**  
+
+🎨 **Color-Coded Charge Levels:**  
+- 🖤 `0%` → **Black (Empty)**  
+- 🔴 `1-25%` → **Red (Low)**  
+- 🟠 `25-50%` → **Orange (Medium)**  
+- 🟡 `50-75%` → **Yellow (High)**  
+- 🟢 `75-100%` → **Green (Full)**  
+
+## 🛠️ Technologies Used  
+
+- 🔹 **RISC-V MCU (IO-Card REV C)**  
+- 🔹 **OLED Display (I2C/SPI Interface)**  
+- 🔹 **Embedded C Programming**  
+
+## 🚀 How It Works  
+
+1️⃣ The **OLED screen** first shows a **welcome message** upon startup.  
+2️⃣ The user provides an input (`0-4`) via a **keypad or serial interface**.  
+3️⃣ The **battery icon updates** accordingly, both in **fill level** and **color**.  
+
+## 📷 Screenshots (Optional)  
+
+🖼️ **Welcome message display**  
+🔋 **Battery icon at different charge levels**  
+🎨 **Color changes with input**  
 
 ---
 
-## 🎨 **Project Preview**
-🚀 **OLED UI Snapshot**
-[Insert Screenshot Here]  
+💡 **Future Improvements:**  
+🔄 Add **animation effects** for smoother transitions.  
+🎛️ Implement **analog input for real-time battery level updates**.  
 
----
-
-## ⚙️ **Setup & Usage**
-### 📌 **Hardware Requirements**
-- **GD32VF103**(RISC-V) or similar MCU  
-- **128x64 OLED Display**  
-- **Embedded Keypad (for input simulation)**  
-
-### 📌 **Software & Tools**
-- **Platform:** VS Code + GD32 RISC-V Toolchain  
-- **Programming Language:** C and Assembly  
-- **Display Driver:** `lcd.h`  
+🛠️ **Made with Embedded C for RISC-V!** 🚀  
